@@ -15,3 +15,19 @@ proxies:
       headers:
         Host: hz-id02.ipv2ray.xyz
     udp: true
+  - name: rusuka_vmess_ws_tls
+    server: sg01.ipv2ray.xyz
+    port: 443
+    type: vmess
+    uuid: 30e9ff03-be03-4602-8edd-11fc58d06390
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vplay.iflix.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: sg01.ipv2ray.xyz
+    udp: true
