@@ -1,33 +1,17 @@
 proxies:
-- name: Vmess WS (SNI)
-  type: vmess
-  server: hz-id02.ipv2ray.xyz
-  port: 443
-  uuid: 055562a9-8171-4bd4-8c76-50ca01290dac
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vplay.iflix.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: vplay.iflix.com
-- name: Vmess SG WS (SNI)
-  type: vmess
-  server: sg01.ipv2ray.xyz
-  port: 443
-  uuid: 30e9ff03-be03-4602-8edd-11fc58d06390
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vplay.iflix.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: vplay.iflix.com
+- name: rakusa_vmess_ws_tls
+    server: hz-id02.ipv2ray.xyz
+    port: 443
+    type: vmess
+    uuid: 055562a9-8171-4bd4-8c76-50ca01290dac
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vplay.iflix.com
+    network: ws
+    ws-opts: 
+      path: /vmess-ws
+      headers: 
+        Host: hz-id02.ipv2ray.xyz
+    udp: true
