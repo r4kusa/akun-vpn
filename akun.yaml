@@ -1,17 +1,33 @@
 proxies:
-- name: SG+VMESS-WS(2024-07-24)
-    server: sg3.socifiles.com
-    port: 443
-    type: vmess
-    uuid: 72f7fb40-4434-11ef-80f3-1239d0255272
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vplay.iflix.com
-    network: ws
-    ws-opts: 
-      path: /vmws
-      headers: 
-        Host: sg3.socifiles.com
-    udp: true
+ - name: SG+VMESS-WS(2024-07-24)
+     server: sg3.socifiles.com
+     port: 443
+     type: vmess
+     uuid: 72f7fb40-4434-11ef-80f3-1239d0255272
+     alterId: 0
+     cipher: auto
+     tls: true
+     skip-cert-verify: true
+     servername: vplay.iflix.com
+     network: ws
+     ws-opts: 
+       path: /vmws
+       headers: 
+         Host: sg3.socifiles.com
+     udp: true
+ - name: rakusa_vmess_ws_tls
+     server: hz-id02.ipv2ray.xyz
+     port: 443
+     type: vmess
+     uuid: 055562a9-8171-4bd4-8c76-50ca01290dac
+     alterId: 0
+     cipher: auto
+     tls: true
+     skip-cert-verify: true
+     servername: vplay.iflix.com
+     network: ws
+     ws-opts: 
+       path: /vmess-ws
+       headers: 
+         Host: hz-id02.ipv2ray.xyz
+     udp: true
