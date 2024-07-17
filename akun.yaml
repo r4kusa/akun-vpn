@@ -1,5 +1,5 @@
 proxies:
-- name: rakusa_vmess_ws_tls
+  - name: rakusa_vmess_ws_tls
     server: hz-id02.ipv2ray.xyz
     port: 443
     type: vmess
@@ -10,8 +10,8 @@ proxies:
     skip-cert-verify: true
     servername: vplay.iflix.com
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /vmess-ws
-      headers: 
+      headers:
         Host: hz-id02.ipv2ray.xyz
     udp: true
