@@ -1,0 +1,17 @@
+proxies:
+- name: Vmess WS (SNI)
+  type: vmess
+  server: hz-id02.ipv2ray.xyz
+  port: 443
+  uuid: 055562a9-8171-4bd4-8c76-50ca01290dac
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vplay.iflix.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: vplay.iflix.com
