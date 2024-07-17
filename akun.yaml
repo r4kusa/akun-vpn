@@ -31,3 +31,19 @@ proxies:
       headers:
         Host: cbtp.xmbb.net
     udp: true
+  - name: HSP
+    server: hsp1.htmlcdn.net
+    port: 443
+    type: vmess
+    uuid: 2ee5b330-4467-11ef-bfa7-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vplay.iflix.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: hsp1.htmlcdn.net
+    udp: true
