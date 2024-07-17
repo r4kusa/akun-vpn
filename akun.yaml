@@ -13,5 +13,5 @@ proxies:
     ws-opts: 
       path: /vmws
       headers: 
-        Host: 
+        Host: sg3.socifiles.com
     udp: true
