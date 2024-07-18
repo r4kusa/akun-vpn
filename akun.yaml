@@ -1,20 +1,4 @@
 proxies:
-  - name: Sanggoro
-    server: 5.lowh.net
-    port: 443
-    type: vmess
-    uuid: f8c2c640-4459-11ef-a837-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vplay.iflix.com
-    network: ws
-    ws-opts:
-      path: /hello
-      headers:
-        Host: 5.lowh.net
-    udp: true
   - name: CBPT
     server: cbtp.xmbb.net
     port: 443
